@@ -7,23 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio: Luis Enrique Guerrero</title>
 
-    <!-- <Relacion de Estilos de la página:> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+    <!-- <Relacion de Estilos de la página:> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
     <link href="Assets/css/Styles.css" rel="stylesheet">
 
     <!-- <Relacionando el Favicon de la página:> -->
     <link rel="icon" sizes="128x128" href="Assets/Images/sol_de_los_pastos.png">
     <link rel="shortcut icon" href="Assets/Images/sol_de_los_pastos.png" type="image/x-icon" />
-
-    <!-- <Relacion de páginas de Facebook en esta página:> -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous"
-        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v10.0&appId=101638355140&autoLogAppEvents=1"
-        nonce="nVlDldbn">
-        </script>
 
 </head>
 
@@ -49,7 +43,7 @@
             <li class="nav-item">
                 <a class="nav-link link-secondary" href="#scrollspyHeading4" active>Proyectos</a>
             </li>
-            <li class="nav-item dropstart">
+            <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle link-secondary" data-bs-toggle="dropdown" href="#navbar-example2" role="button"
                     aria-expanded="false">Contacto:</a>
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
@@ -471,47 +465,36 @@
 
 
     <!-- <Sección de Pie de página:> -->
-    <div class="text-center modal-footer d-flex justify-content-center bg-light">
-        <div>
-            <!-- Contador de visitas -->
-            <a href="#navbar-example2" title="¡Gracias por Visitarnos el dia de hoy!"><img src="https://counter9.stat.ovh/private/contadorvisitasgratis.php?c=xq72jqmyak6rxpkkjyphk2k3xfr8s2rr" border="0" title="¡Gracias por Visitarnos el dia de hoy!" alt="¡Gracias por Visitarnos el dia de hoy!"></a>            
-            <h6>
-                ¡Gracias por Visitarnos el dia de hoy!
-            </h6>
-
-
-
-            <!--  REDES SOCIALES  -->
-            <div>
-                <a class="btn btn-secondary" href="https://api.whatsapp.com/send?phone=573208172936" target="_blank"><img alt="WhatsApp"
-                        src="https://blog.eftours.com/wp-content/uploads/2013/02/WhatsApp-Messenger-icon.png" width=28
-                        height=28 /></a>
-                <a class="btn btn-secondary" rel="luisguerrero@misena.edu.co" href="mailto:luisguerrero@misena.edu.co" target="_blank"><img
-                        alt="Escríbeme en Google"
-                        src="https://cdn0.vox-cdn.com/thumbor/LCZxsVlrvbqfImK1AYqqfmFvi-o=/0x0:800x533/1280x854/cdn0.vox-cdn.com/uploads/chorus_image/image/32851569/GMail-Android-R.0.png"
-                        width=28 height=28 /></a>
-                <a class="btn btn-secondary" href="http://www.facebook.com/zairtre" target="_blank"><img alt="Siguenos en Facebook"
-                        src="https://www.projetosupermed.com.br/wp-content/uploads/2019/09/facebook-icon-02.png"
-                        width=28 height=28 /></a>
-                <a class="btn btn-secondary" href="https://www.youtube.com/channel/UCbu608L9hvZ4BczVAPnfFPA" target="_blank"><img
-                        alt="Siguenos en YouTube"
-                        src="https://findicons.com/files/icons/518/free_social/128/youtube_256.png" width=28
-                        height=28 /></a>
-                <a class="btn btn-secondary" href="https://github.com/LuisEnGuerrero"
-                        target="_blank"><img alt="Repositorios en Github"
-                        src="https://img.icons8.com/nolan/2x/github.png" width=28
-                        height=28 /></a>
-    </div>
-            <h6>
-                Bogotá - Colombia
-            </h6>
-
+    <footer class='text-white py-4 bg-dark navbar-expand-md mt-3'>
+        <div class='container'>
+            <nav class='row'>
+                <ul class='col-12 col-md-4 list-unstyled border-bottom border-1 border-dark'>
+                    <hr/>
+                    <li class='font-weight-bold h5 mb-2 text-center'>&copy; Copyright 2022 <strong>LuisEnGuerrero.Co</strong></li>
+                    <li class='text-center'>Esta Web ha sido desarrollada en HTML5 y diseñada con Bootstrap y CSS.</li>
+                </ul>
+                <ul class='col-12 col-md-4 d-flex align-items-center justify-content-center border-bottom border-1 border-dark' >
+                    <img src='./Assets/Images/sol_de_los_pastos.png' alt='logo' class='mx-2 shadow-lg bg-body border border-2 rounded-circle sol_rotate' height='88'/>
+                </ul>
+                <ul class='col-12 col-md-4 list-unstyled border-bottom border-1 border-dark'>
+                    <hr/>
+                    <li class='font-weight-bold h5 mb-2 text-center'>Sígueme!</li>
+                    <div class='d-flex justify-content-between'>
+                        <a class='text-reset' href='https://api.whatsapp.com/send?phone=573208172936' target='_blank' rel="noopener noreferrer"><i class="h3 bi bi-whatsapp"></i></a>
+                        <a class='text-reset' href='mailto:luisguerrero@misena.edu.co' target='_blank' rel="noopener noreferrer"><i class="h3 bi bi-mailbox2"></i></a>
+                        <a class='text-reset' href='https://www.linkedin.com/in/luisenguerrero/' target='_blank' rel="noopener noreferrer"><i class="h3 bi bi-linkedin"></i></a>
+                        <a class='text-reset' href='https://github.com/LuisEnGuerrero' target='_blank' rel="noopener noreferrer"><i class="h3 bi bi-github"></i></a>
+                        <a class='text-reset' href='https://luisenguerrero.netlify.app/' target='_blank' rel="noopener noreferrer"><i class="h3 bi bi-layout-text-sidebar-reverse"></i></a>
+                    </div>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
