@@ -6,6 +6,25 @@
   animation: girar 30s linear infinite running;
 }
 
+.large {
+  font-display: unset;
+  font-size: larger;
+  font-size-adjust: unset;
+  font-stretch: ultra-condensed;
+  font-weight: 30%;
+}
+
+.underline {
+  border-bottom: 2px solid transparent;
+}
+
+.active a:hover {
+    border-bottom: 2px solid rgb(76, 76, 182);
+    font-style: oblique;
+    font-stretch: narrower;
+    color: orangered;  
+}
+
 @keyframes girar {
   from {
     transform: rotate(0deg);
@@ -36,5 +55,9 @@
     flex-direction: column;
     border: 5px solid;
     border-color: dimgray;    
+  }
+
+  nav img {
+    width: 15%;
   }
 }
