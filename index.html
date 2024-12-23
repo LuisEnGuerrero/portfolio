@@ -14,7 +14,7 @@
     <!-- <Relacion de Estilos de la página:> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
     <link href="Assets/css/Styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="actualizacion.css">
+    <link rel="stylesheet" href="Assets/css/actualizacion.css">
 
     <!-- <Relacionando el Favicon de la página:> -->
     <link rel="icon" sizes="128x128" href="Assets/Images/sol_de_los_pastos.png">
@@ -41,7 +41,16 @@
                     <li><a href="#fortalezas">Fortalezas</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
                 </ul>
-                <a href="#contacto" class="btn-contacto">Contáctanos</a>
+
+                <!-- Botón de Contacto -->
+                <a href="#contacto" class="btn-contacto dropdown-toggle" id="contactDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contácto</a>
+                <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                    <a class='dropdown-item' href='https://api.whatsapp.com/send?phone=573208172936' target='_blank' rel="noopener noreferrer"><i class="h3 bi bi-whatsapp"></i> WhatsApp</a>
+                    <a class='dropdown-item' href='mailto:luisguerrero@misena.edu.co' target='_blank' rel="noopener noreferrer"><i class="h3 bi bi-mailbox2"></i> Email</a>
+                    <a class='dropdown-item' href='https://www.linkedin.com/in/luisenguerrero/' target='_blank' rel="noopener noreferrer"><i class="h3 bi bi-linkedin"></i> LinkedIn</a>
+                    <a class='dropdown-item' href='https://github.com/LuisEnGuerrero' target='_blank' rel="noopener noreferrer"><i class="h3 bi bi-github"></i> GitHub</a>
+                    <a class='dropdown-item' href='https://luisenguerrero.netlify.app/' target='_blank' rel="noopener noreferrer"><i class="h3 bi bi-layout-text-sidebar-reverse"></i> Portfolio</a>
+                </div>            
             </div>
         </nav>
     </header>
@@ -51,7 +60,8 @@
             <div class="container">
                 <h1>Soluciones Tecnológicas a tu Alcance</h1>
                 <p>Desarrollamos estrategias y tecnologías innovadoras que impulsan tu negocio al siguiente nivel.</p>
-                <a href="#servicios" class="btn">Descubre Más</a>
+                <a href="Assets\Documentos\CVDWB061224.pdf" target="es_LA" class="btn"
+                download="Hoja de Vida Bogota Colombia - Luis Enrique Guerrero 13122024.pdf">Hoja de Vida</a>
             </div>
     </section>
 
@@ -372,7 +382,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h3>Contacto:</h3>
+                    <h3>Contacto</h3>
                     <div class='d-flex justify-content-between'>
                         <a class='text-reset' href='https://api.whatsapp.com/send?phone=573208172936' target='_blank' rel="noopener noreferrer"><i class="h3 bi bi-whatsapp"></i></a>
                         <a class='text-reset' href='mailto:luisguerrero@misena.edu.co' target='_blank' rel="noopener noreferrer"><i class="h3 bi bi-mailbox2"></i></a>
@@ -387,7 +397,10 @@
             </div>
         </div>
     </footer>
-
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

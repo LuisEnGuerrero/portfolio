@@ -1,0 +1,16 @@
+
+LuceModa
+│
+src/
+├── app/
+│   ├── app.component.*          # Componente principal
+│   ├── components/              # Componentes reutilizables (navbar, footer, etc.)
+│   ├── features/                # Funcionalidades principales (gestión de clientes, productos, etc.)
+│   ├── models/                  # Modelos de datos utilizados en la aplicación
+│   ├── services/                # Lógica de negocio y conexión con la API
+│   ├── shared/                  # Módulos compartidos como Angular Material
+│   └── environments/            # Configuraciones de entorno (desarrollo, producción)
+
+
+
+

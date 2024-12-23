@@ -1,0 +1,29 @@
+
+
+
+SAC-Optimizer/
+├── app/
+│   ├── __init__.py
+│   ├── main.py                 # Punto de entrada de la API FastAPI
+│   ├── controllers/            # Endpoints principales
+│   │   ├── clientes.py         # Gestión CRUD de clientes
+│   │   ├── productos.py        # Gestión CRUD de productos
+│   │   ├── tipo_documento.py   # Gestión CRUD de tipos de documento
+│   │   ├── ventas.py           # Registro de ventas
+│   │   ├── reporte_fidelizacion.py # Generación de reportes de fidelización
+│   │   ├── exportar_clientes.py    # Exportación de datos en formato CSV
+│   │   └── flask_admin.py      # Panel administrativo con Flask
+│   ├── database/               # Configuración y modelos de base de datos
+│   │   ├── config.py           # Configuración de la conexión con SQLite
+│   │   ├── models.py           # Modelado de datos con SQLAlchemy
+│   │   └── sac_optimizer.db    # Archivo de la base de datos SQLite
+│   ├── schemas/                # Esquemas de validación y respuesta
+│   ├── services/               # Lógica de negocio y utilidades
+│   │   ├── export_to_csv.py    # Exportación de datos a CSV
+│   │   └── report_service.py   # Generación de reportes en Excel
+│   ├── templates/              # Plantillas HTML para Flask Admin
+│   └── tests/                  # Pruebas unitarias y de integración
+
+
+
+
