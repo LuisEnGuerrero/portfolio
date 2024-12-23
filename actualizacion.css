@@ -1,0 +1,193 @@
+/* Reset y Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+/* Navbar */
+header {
+    background-color: #1b1b1b;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f8b400;
+}
+
+.btn-contacto {
+    background-color: #f8b400;
+    color: #B3080E;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    background: url('Assets/Images/LuisDev05.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.hero h1 {
+    background-color: rgba(12, 90, 142, 0.5); /* Fondo azul con transparencia */
+    margin-top: 48%;
+    margin-bottom: 0;
+    font-size: 3rem;
+    padding: 1rem 0; 
+}
+.hero p {
+    background-color: rgba(12, 90, 142, 0.5); /* Fondo azul con transparencia */
+    margin-bottom: 2.2rem;
+    margin-top: 0;
+    padding: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    background-color: #f8b400;
+    color: #B3080E;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero ::before {
+    position: absolute;
+    top: 73%;
+    left: 10%;
+    width: 80%;
+    height: 25%;
+    background-color: rgba(0, 0, 255, 0.5); /* Fondo azul con transparencia */
+    z-index: 1; /* Coloca el fondo detrás del texto */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2; /* Coloca el texto por encima del fondo */
+}
+
+
+/* Servicios */
+.servicios {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.servicios .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicios .col {
+    flex: 1;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.servicios i {
+    font-size: 3rem;
+    color: #f8b400;
+    margin-bottom: 1rem;
+}
+
+/* Sobre Nosotros */
+.nosotros {
+    background-color: #f8f8f8;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content div {
+    flex: 1;
+    margin: 1rem;
+}
+
+.footer-content h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+}
